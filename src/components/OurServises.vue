@@ -3,13 +3,14 @@
 
         <h1 class="text-4xl font-bold  text-center mb-12">Наши услуги </h1>
 
-        <div class="servises-container space-y-8">
+        <div class="servises-container space-y-8" id="servise">
 
-            <div v-for="servise of Servises" class="servise-wrapper">
-                <div class="servise-img">
+            <div v-for="(servise , index)  of Servises" :key="index" class="servise-wrapper">
+                <div class="servise-img" :data-aos="(index + 1) % 2 == 0 ? 'fade-right' : 'fade-left'"
+                    data-aos-duration="500" data-aos-delay="200">
                     <img :src="servise.img" alt="">
                 </div>
-                <div class="servise-title space-y-6">
+                <div class="servise-title space-y-6" :data-aos="(index + 1) % 2 == 1 ? 'fade-right' : 'fade-left'" data-aos-duration="500" data-aos-delay="200">
                     <h1 class="text-2xl font-bold">{{ servise.title }} </h1>
                     <p>{{ servise.text }} </p>
                     <a-button type="primary" class="font-bold " size="large"> Заказать</a-button>

@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-div relative mt-20">
+    <div class="bg-div relative ">
         <div class="darking"></div>
-        <div class="main-container lg:flex gap-12 items-center justify-between">
+        <div class="main-container lg:flex gap-12 items-center justify-between" id="main">
 
-            <!-- addффф -->
+            <!-- add -->
             <div class="content relative lg:w-1/2 mb-2" style="z-index: 3;">
                 <p data-aos="fade-right" data-aos-duration="500" data-aos-delay="200"
-                    class="sm:text-2xl lg:text-5xl font-semibold text-white"> Изготовим и установим окна ПВХ в Москве за
+                    class="sm:text-2xl lg:text-5xl font-semibold text-white"> Изготовим и установим окна ПВХ в Ташкентской области за
                     5 дней
                 </p>
                 <p class="text-white  mt-6 ">Используем только высококачественные сертифицированные материалы и

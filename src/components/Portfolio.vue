@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gray-100 mt-6">
+    <div class="bg-gray-100 mt-6" id="portfolio">
         <div class="main-container py-10">
             <div class="flex items-center justify-between mb-10">
                 <h1 class="font-semibold text-4xl ">Наши проекты </h1>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted,  } from 'vue';
+import { ref, onMounted, } from 'vue';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons-vue';
 const images = ref([
     slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9, slide10, slide11, slide12, slide13, slide14

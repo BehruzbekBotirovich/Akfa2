@@ -3,7 +3,7 @@
         <h1 class="title">Как мы работаем</h1>
         <div class="flex flex-wrap md:items-center md:justify-between px-4 md:px-10">
 
-            <div class="w-1/2 p-2  md:w-1/4">
+            <div class="w-1/2 p-2  md:w-1/4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">
                 <div class="flex justify-center mb-2 md:mb-7">
                     <img src="../assets/images/how1.png" alt="">
                 </div>
@@ -11,7 +11,7 @@
                 <p class="text-center  "> Выезжаем бесплатно во все города Московской области </p>
             </div>
 
-            <div class="w-1/2 p-2  md:w-1/4">
+            <div class="w-1/2 p-2  md:w-1/4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="300">
                 <div class="flex justify-center mb-2 md:mb-7">
                     <img src="../assets/images/how2.png" alt="">
                 </div>
@@ -19,7 +19,7 @@
                 <p class="text-center  "> С 9 до 21 без выходныхи праздников </p>
             </div>
 
-            <div class="w-1/2 p-2  md:w-1/4">
+            <div class="w-1/2 p-2  md:w-1/4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="400">
                 <div class="flex justify-center mb-2 md:mb-7">
                     <img src="../assets/images/how3.png" alt="">
                 </div>
@@ -29,7 +29,7 @@
                     систем и материалов отделки</p>
             </div>
 
-            <div class="w-1/2 p-2  md:w-1/4">
+            <div class="w-1/2 p-2  md:w-1/4" data-aos="fade-down" data-aos-duration="500" data-aos-delay="500">
                 <div class="flex justify-center mb-2 md:mb-7">
                     <img src="../assets/images/how4.png" alt="">
                 </div>
