@@ -23,7 +23,7 @@
                 </a-menu-item>
             </a-menu>
             <div class="md:hidden">
-                <img src="../assets/images/logo.png" alt="" width="36">
+                <img src="../assets/images/logo.png" alt="" loading="lazy" width="36">
             </div>
             <!-- Burger Icon for Mobile -->
             <div class="lg:hidden">
@@ -65,7 +65,7 @@
         </a-modal>
     </header>
     <nav class="md:flex justify-between py-4 main-container mt-14">
-        <div class="md:flex gap-4">
+        <div class="md:flex gap-4n">
             <div class="hidden md:block"><img src="../assets/images/logo.png" width="60" height="60"></div>
             <div>
                 <h3 class="text-xl font-bold "> Название компании</h3>

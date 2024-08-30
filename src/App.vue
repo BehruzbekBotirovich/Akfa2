@@ -10,6 +10,7 @@ import ContactUs from './components/ContactUs.vue'
 import FooterEnd from './components/FooterEnd.vue'
 import OurCustomers from './components/OurCustomers.vue'
 import Banner2 from './components/Banner2.vue'
+import Products from './components/Products.vue'
 </script>
 
 <template>
@@ -27,7 +28,7 @@ import Banner2 from './components/Banner2.vue'
     <Portfolio></Portfolio>
     <Banner2></Banner2>
     <OurCustomers></OurCustomers>
-
+    <Products></Products>
     <div id="contact">
         <ContactUs></ContactUs>
     </div>
