@@ -1,30 +1,47 @@
 <template>
     <div class="main-container py-14 ">
 
-        <h1 class="text-4xl font-bold  text-center mb-12">Наши услуги </h1>
+        <h1 class="text-4xl font-bold  text-center mb-4 md:mb-12">Наши услуги </h1>
 
-        <div class="servises-container space-y-8" id="servise">
+        <div class="servises-container space-y-6 " id="servise">
 
-            <div v-for="(servise , index)  of Servises" :key="index" class="servise-wrapper">
+            <div v-for="(servise, index)  of Servises" :key="index" class="servise-wrapper">
                 <div class="servise-img" :data-aos="(index + 1) % 2 == 0 ? 'fade-right' : 'fade-left'"
                     data-aos-duration="500" data-aos-delay="200">
                     <img :src="servise.img" alt="">
                 </div>
-                <div class="servise-title space-y-6" :data-aos="(index + 1) % 2 == 1 ? 'fade-right' : 'fade-left'" data-aos-duration="500" data-aos-delay="200">
-                    <h1 class="text-2xl font-bold">{{ servise.title }} </h1>
+                <div class="servise-title space-y-2 md:space-y-6"
+                    :data-aos="(index + 1) % 2 == 1 ? 'fade-right' : 'fade-left'" data-aos-duration="500"
+                    data-aos-delay="200">
+                    <h1 class=" md:text-2xl font-bold">{{ servise.title }} </h1>
                     <p>{{ servise.text }} </p>
-                    <a-button type="primary" class="font-bold " size="large"> Заказать</a-button>
+                    <a-button type="primary" class="font-bold "  @click="showModal"> Заказать</a-button>
                 </div>
             </div>
 
         </div>
-
-
+        <a-modal v-model:open="open" title="Вызвать замерщика на дом" :footer="false" @ok="handleOk">
+            <ZamerWindow></ZamerWindow>
+        </a-modal>
     </div>
+
+
 </template>
 
 
 <script setup>
+import ZamerWindow from './windows/ZamerWindow.vue';
+import { ref } from 'vue';
+const open = ref(false);
+const showModal = () => {
+    open.value = true;
+};
+const handleOk = e => {
+    console.log(e);
+    open.value = false;
+};
+
+
 import img1 from '../assets/images/ours1.webp'
 import img2 from '../assets/images/ours2.webp'
 import img3 from '../assets/images/ours3.webp'
@@ -73,6 +90,10 @@ const Servises = [
     gap: 30px;
     display: flex;
     align-items: center;
+
+    @media (max-width:610px) {
+        gap: 10px;
+    }
 }
 
 .servise-title {
@@ -88,5 +109,12 @@ const Servises = [
         object-fit: cover;
         border-radius: 10px;
     }
+
+    @media (max-width:620px) {
+        img {
+            aspect-ratio: 1/1;
+        }
+    }
+
 }
 </style>

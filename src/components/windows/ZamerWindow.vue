@@ -11,7 +11,7 @@
         </a-form-item>
 
         <a-form-item class="flex justify-center">
-            <a-button @click="handleSubmit" type="primary" size="large">
+            <a-button @click="handleSubmit" type="primary" size="large" >
                 Отправить заявку
             </a-button>
         </a-form-item>
